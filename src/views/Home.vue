@@ -1,0 +1,29 @@
+<template>
+  <div>
+    首页
+  </div>
+</template>
+<script>
+    import {mapGetters} from 'vuex'
+
+  export default {
+   
+    name: '',
+    data() {
+      return {
+       
+      }
+    },
+    computed: mapGetters([
+    ]),
+    created() {
+     
+    },
+    methods: {
+     
+    },
+  }
+</script>
+<style scoped lang="less" type="text/less">
+  @r: 15rem;
+</style>
