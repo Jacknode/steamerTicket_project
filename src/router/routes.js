@@ -5,10 +5,18 @@
 const getComponent = (name) => () =>
   import (`../views/${name}.vue`);
 
-export default [{
+export default [
+  //首页
+  {
     path: '/',
     name: 'Home',
     component: getComponent('Home'),
   },
+//  选班次
+  {
+    path: '/choiceClasses',
+    name: 'ChoiceClasses',
+    component: getComponent('ChoiceClasses'),
+  }
 
 ]
