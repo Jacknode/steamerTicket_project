@@ -23,5 +23,23 @@ export default [
     name: 'VotesType',
     component: getComponent('VotesType'),
   },
+  //  订单填写
+  {
+    path: '/orderWriting',
+    name: 'OrderWriting',
+    component: getComponent('OrderWriting'),
+  },
+  //  添加自助售票
+  {
+    path: '/addSelfServiceTicketing',
+    name: 'AddSelfServiceTicketing',
+    component: getComponent('AddSelfServiceTicketing'),
+  },
+  //  添加联系人
+  {
+    path: '/selectTopContacts',
+    name: 'SelectTopContacts',
+    component: getComponent('SelectTopContacts'),
+  },
 
 ]
