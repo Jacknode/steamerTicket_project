@@ -18,7 +18,7 @@
             提示 : 贵宾舱 , 豪华舱 , 经济舱的不同类型有所加价 , 请根据您的需要进行选择.
           </div>
           <!--预约-->
-          <div class="takeAppointment clearfix">
+          <div class="takeAppointment clearfix" v-for="item,index in 2">
             <div class="takeAppointmentLeftBox">
               <h1>11 : 30</h1>
               <h2>T121</h2>
