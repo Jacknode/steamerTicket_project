@@ -2,7 +2,7 @@
     <div>
       <div class="container">
         <header>
-          <div class="goBack"></div>
+          <div class="goBack" @click="goBack"></div>
           <strong>泸州码头->自贡码头</strong>
         </header>
         <section>
@@ -45,7 +45,12 @@
 </template>
 <script type="text/ecmascript-6">
     export default {
-        props: [],
+      props: [],
+      methods:{
+        goBack(){
+          this.$router.go(-1)
+        },
+      },
     }
 </script>
 <style scoped type="text/less" lang="less">

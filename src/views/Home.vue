@@ -20,6 +20,7 @@
           </li>
           <li @click="showSteamerTicket" :class="{active: typeIndex==2}">
             <span>船票</span>
+            <i></i>
           </li>
         </ul>
         <div class="typeListWrap" v-show="showType" @click="closeType">
@@ -57,7 +58,7 @@
         <i>明天</i>
       </div>
       <!--查询班次-->
-      <div class="searchCarTimes">查询班次</div>
+      <div class="searchCarTimes" @click="goClasses">查询班次</div>
     </section>
     <toast v-model="showErr" type="cancel" :text="errCon"></toast>
   </div>
@@ -98,6 +99,11 @@
 
     },
     methods: {
+      goClasses(){
+        this.$router.push({
+          name:'ChoiceClasses',
+        })
+      },
       //获取票类型
       initTicketType(id, index) {
         this.isTicket = true;
